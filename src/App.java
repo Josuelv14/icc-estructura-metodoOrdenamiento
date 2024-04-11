@@ -59,10 +59,18 @@ public class App {
             opcionMetodo = scanner.nextInt();
             switch (opcionMetodo) {
                 case 1:
+                System.out.println("Ingrese A si quiere ver con pasos");
+                String opcion= scanner.nextLine();
+                boolean cond;
+                if (opcion.equals("A")){
+                    cond = true;
+                }else{
+                    cond=false;
+                }
                 // Ingrese A -> Para logs y B -> sin logs
                 // String opcionLog
                 // Boolean cond
-                //  opcionLog.equals(A) cond -> true
+                // if opcionLog.equals(A) cond -> true
                 // else cond -> false
                 // metodos.sortByBubble(arreglo,cond);
                    int[] arregloOrdenado = metodos.sortByBubble(arreglo, false);
